@@ -24,9 +24,12 @@
   section {
     img {
       border: none;
+      background: none;
+      box-shadow: none;
+      margin: 0;
     }
   }
-  
+
   img.small-logo {
     width: 50px;
     padding-right: 5px;
