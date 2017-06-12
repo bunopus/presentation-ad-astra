@@ -21,6 +21,12 @@
     display: none;
   }
 
+  section {
+    img {
+      border: none;
+    }
+  }
+  
   img.small-logo {
     width: 50px;
     padding-right: 5px;
