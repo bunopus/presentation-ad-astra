@@ -6,13 +6,15 @@
 
 		<title>YOUR NAME HERE</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -26,7 +28,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>SLIDES HERE</section>
+                <section data-background="#FFFFFF"><img class="fragment" data-duration="2" data-animate="fadeIn" src="img/ministry.png"></section>
 			</div>
 		</div>
 
@@ -43,7 +45,9 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'bower_components/jquery/dist/jquery.min.js' },
+					{ src: 'js/animations.js' }
 				]
 			});
 		</script>
