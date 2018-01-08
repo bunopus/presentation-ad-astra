@@ -47,8 +47,14 @@
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'bower_components/jquery/dist/jquery.min.js' },
-					{ src: 'js/animations.js' }
-				]
+					{ src: 'js/animations.js' },
+					{ src: 'plugin/alt-arrows/alt-arrows.js', async: true }
+				],
+                keyboard: {
+                    
+                    39: 'next',
+					37: 'prev'
+                }
 			});
 		</script>
 	</body>
