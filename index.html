@@ -45,17 +45,27 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: waitForHLJS },
 					{ src: 'bower_components/jquery/dist/jquery.min.js' },
 					{ src: 'js/animations.js' },
 					{ src: 'plugin/alt-arrows/alt-arrows.js', async: true },
-					{ src: 'plugin/blur-background/blur-background.js'}
+					{ src: 'plugin/blur-background/blur-background.js'},
+					{ src: 'plugin/loader-splashscreen/loader-splashscreen.js'}
 				],
                 keyboard: {
                     39: 'next',
 					37: 'prev'
                 }
 			});
+
+            function waitForHLJS() {
+                if(window.hljs) {
+                    hljs.initHighlightingOnLoad();
+                    return;
+                }
+                console.log('Waiting for hljs');
+                setTimeout(waitForHLJS, 1000);
+            }
 		</script>
 	</body>
 </html>
