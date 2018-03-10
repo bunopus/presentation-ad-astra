@@ -10,7 +10,7 @@
             setTimeout(() => {
                 let background = $('.reveal div.backgrounds .present:visible');
                 background.css({filter: `blur(20px) opacity(50%)`});
-            }, 0);
+            }, 100);
         }
     }, false);
 })();
