@@ -8,7 +8,7 @@
     Reveal.addEventListener('slidechanged', function (slide) {
         if (slide.currentSlide.hasAttribute('data-background-blur')) {
             setTimeout(() => {
-                let background = $('.reveal div.backgrounds .present:visible');
+                let background = $('.reveal div.backgrounds .present:visible:not(.stack)');
                 background.css({filter: `blur(20px) opacity(50%)`});
             }, 100);
         }
