@@ -1,0 +1,35 @@
+.reveal .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.reveal .shadowed {
+  box-shadow: 6px 7px 17px -5px rgba(0, 0, 0, 0.75); }
+
+.reveal code {
+  padding: 20px !important;
+  max-height: 1500px !important; }
+
+.reveal code span.fragment.fade-out.visible {
+  display: none; }
+
+.reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none;
+  margin: 0; }
+
+.reveal img.small-logo {
+  width: 50px;
+  padding-right: 5px;
+  margin: 0;
+  vertical-align: middle; }
+
+.reveal .block {
+  display: inline-block;
+  vertical-align: middle; }
+
+.reveal img.block {
+  margin-right: -5px; }
