@@ -11,7 +11,7 @@
  *
  * @author https://github.com/bunopus
  */
-let RevealScriptRunner = window.RevealScriptRunner || (() => {
+let RevealGlobalFragments = window.RevealGlobalFragments || (() => {
     const dataAttrName = "data-global-fragment";
 
     Reveal.addEventListener('ready', slideIsVisible);
