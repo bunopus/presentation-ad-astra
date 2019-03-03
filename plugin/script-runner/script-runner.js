@@ -6,7 +6,7 @@
  */
 let RevealScriptRunner = window.RevealScriptRunner || (function () {
 
-    let runners = runners = Reveal.getConfig().script_runner || {};
+    let runners = Reveal.getConfig().script_runner || {};
     Reveal.addEventListener('slidechanged', function (event) {
         _onEvent('slidechanged', event)
     });
