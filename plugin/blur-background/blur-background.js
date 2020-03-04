@@ -9,7 +9,7 @@
         if (slide.currentSlide.hasAttribute('data-background-blur')) {
             setTimeout(() => {
                 let background = $('.reveal div.backgrounds .present:visible:not(.stack)');
-                background.css({filter: `blur(20px) opacity(50%)`});
+                background.css({filter: `blur(20px) opacity(70%)`});
             }, 100);
         }
     }, false);
