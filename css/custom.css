@@ -11,16 +11,28 @@
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal {
   font-family: missed_glyphs, papaya_sunriseregular, serif;
-  color: #3f3838; }
+  color: #3f3838;
+  font-weight: 100; }
 
 .reveal h3 {
   line-height: 1.7em; }
 
+.reveal .accent {
+  color: #b82525; }
+
 .reveal ul {
+  padding-top: 50px;
   list-style: none;
-  margin-left: 0;
-  padding-left: 1em;
-  text-indent: -1em; }
+  margin: 0; }
+  .reveal ul li:before {
+    font-family: Comic Sans MS;
+    vertical-align: top;
+    content: "-";
+    color: #b82525;
+    position: relative;
+    left: -25px; }
+  .reveal ul li {
+    padding-bottom: 20px; }
 
 .reveal .highlighted {
   color: #b82525; }
