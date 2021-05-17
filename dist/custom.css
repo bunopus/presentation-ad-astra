@@ -1,0 +1,97 @@
+.reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none;
+  margin: 0; }
+  .reveal section img.shadow {
+    -webkit-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5); }
+
+.reveal section h1,
+.reveal section h2,
+.reveal section h3,
+.reveal section h4,
+.reveal section h5, .reveal section {
+  font-family: papaya_sunriseregular, serif;
+  color: #3f3838;
+  font-weight: 100; }
+
+.reveal section .apologos {
+  line-height: 2em; }
+  .reveal section .apologos .preambula {
+    font-style: italic;
+    font-size: 0.9em;
+    line-height: 1.5em; }
+
+.reveal section blockquote {
+  color: #100007;
+  box-shadow: none;
+  font-family: Roboto, serif;
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: left;
+  background: none; }
+
+.reveal section h3 {
+  line-height: 1.7em; }
+
+.reveal section .accent {
+  color: #b82525; }
+
+.reveal section ul {
+  padding-top: 50px;
+  list-style: none;
+  margin: 0; }
+  .reveal section ul li:before {
+    font-family: Comic Sans MS;
+    vertical-align: top;
+    content: "-";
+    color: #b82525;
+    position: relative;
+    left: -25px; }
+  .reveal section ul li {
+    padding-bottom: 20px; }
+
+.reveal section .highlighted {
+  color: #b82525; }
+
+.reveal section .quiz-table {
+  font-size: 1em; }
+  .reveal section .quiz-table .number {
+    color: #b82525;
+    text-align: center; }
+  .reveal section .quiz-table td {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.53); }
+  .reveal section .quiz-table tr.fragment:not(.visible) {
+    filter: blur(1.5rem);
+    opacity: 1;
+    visibility: visible; }
+
+.reveal section .slightly-blurred {
+  filter: blur(5px); }
+
+.reveal section .greek {
+  font-family: greek_font;
+  text-transform: none;
+  font-style: italic;
+  font-size: 2.7em;
+  font-weight: 300;
+  line-height: 0.8em;
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; }
+
+#akephaloi {
+  position: absolute;
+  visibility: visible;
+  bottom: 0;
+  right: 0px;
+  opacity: 0.9;
+  display: none;
+  z-index: 10; }
+  #akephaloi img {
+    height: 30%; }

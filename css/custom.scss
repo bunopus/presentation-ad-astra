@@ -1,0 +1,131 @@
+.reveal {
+  $smocky_black: rgba(16, 0, 7, 1);
+  $raisin_black: #3f3838;
+  $purple: rgba(43, 1, 30, 1);
+  $green: rgba(59, 96, 71, 1);
+  $gold: rgba(246, 204, 104, 1);
+  $red: #b82525;
+
+  section {
+    img {
+      border: none;
+      background: none;
+      box-shadow: none;
+      margin: 0;
+
+      &.shadow {
+        -webkit-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    & {
+      font-family: papaya_sunriseregular, serif;
+      color: $raisin_black;
+      font-weight: 100;
+    }
+
+    .apologos {
+      line-height: 2em;
+      .preambula {
+        font-style: italic;
+        font-size: 0.9em;
+        line-height: 1.5em;
+      }
+    }
+
+    blockquote {
+      color: $smocky_black;
+      box-shadow: none;
+      font-family: Roboto, serif;
+      font-size: 0.8em;
+      font-style: normal;
+      font-weight: lighter;
+      text-align: left;
+      background: none;
+    }
+
+    h3 {
+      line-height: 1.7em;
+    }
+
+    .accent {
+      color: $red;
+    }
+
+    ul {
+      padding-top: 50px;
+      list-style: none;
+      margin: 0;
+
+      li:before {
+        font-family: Comic Sans MS;
+        vertical-align: top;
+        content: "-";
+        color: $red;
+        position: relative;
+        left: -25px;
+      }
+
+      li {
+        padding-bottom: 20px;
+      }
+    }
+
+    .highlighted {
+      color: $red;
+    }
+
+    .quiz-table {
+      .number {
+        color: $red;
+        text-align: center;
+      }
+      font-size: 1em;
+      td {
+        border-bottom: 1px dotted rgba(0, 0, 0, 0.53);
+      }
+      tr.fragment:not(.visible) {
+        filter: blur(1.5rem);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .slightly-blurred {
+      filter: blur(5px);
+    }
+
+    .greek {
+      font-family: greek_font;
+      text-transform: none;
+      font-style: italic;
+      font-size: 2.7em;
+      font-weight: 300;
+      line-height: 0.8em;
+      color: black;
+      -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+  }
+}
+
+#akephaloi {
+  position: absolute;
+  visibility: visible;
+  bottom: 0;
+  right: 0px;
+  opacity: 0.9;
+  display: none;
+  z-index: 10;
+  img {
+    height: 30%;
+  }
+}
