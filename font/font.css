@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "papaya_sunriseregular";
+    src: url("PapayaSunrise.woff") format("woff2"), url("PapayaSunrise.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto_mono";
+    src: url("RobotoMono-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "greek_font";
+    src: url("GFSNeohellenic-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "greek_font";
+    src: url("GFSNeohellenic-Italic.woff2") format("woff2");
+    font-style: italic, oblique;
+}
