@@ -66,6 +66,20 @@
     left: -25px; }
   .reveal section ul li {
     padding-bottom: 20px; }
+  .reveal section ul.instructions {
+    font-family: roboto_mono, monospace;
+    font-size: 20px;
+    padding: 0; }
+    .reveal section ul.instructions a {
+      color: #100007; }
+      .reveal section ul.instructions a:hover {
+        text-decoration: underline; }
+    .reveal section ul.instructions .hint {
+      background-color: #ffcc68;
+      margin-right: 10px;
+      padding: 0 10px 0 10px; }
+    .reveal section ul.instructions li:before {
+      content: ""; }
 
 .reveal section .highlighted {
   color: #b82525; }

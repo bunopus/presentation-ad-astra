@@ -95,14 +95,33 @@
       li {
         padding-bottom: 20px;
       }
+
+      &.instructions {
+        font-family: roboto_mono, monospace;
+        font-size: 20px;
+        padding: 0;
+        a {
+          color: $smocky_black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .hint {
+          background-color: #ffcc68;
+          margin-right: 10px;
+          padding: 0 10px 0 10px;
+        }
+
+        li:before {
+          content: "";
+        }
+      }
     }
 
     .highlighted {
       color: $red;
     }
-   
-    
-    
+
     .quiz-table {
       .number {
         color: $red;
